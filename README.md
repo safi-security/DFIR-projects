@@ -14,8 +14,17 @@ The malware sample was unpacked and analysed using static analysis techniques in
 
 Evidence from disk artefacts, PowerShell activity, and reverse engineering findings was correlated to reconstruct the infection timeline and demonstrate how the malware was deployed and executed on the system.
 
-## Network Security
-Configured and secured network devices using Cisco Packet Tracer. This included implementing device and administrator passwords, configuring AAA server authentication, and setting up GRE tunnelling between network devices to simulate secure communication across networks.
+## Network Security Configuration
+Designed and secured a simulated enterprise network using Cisco Packet Tracer based on a real-world brief for the GÉANT research network. The project involved configuring secure communication between multiple network segments including a DMZ, internal headquarters network, and a remote site.
 
-## Docker
-Used Docker to build and run containerised environments as part of coursework. This involved creating and managing containers, running applications inside isolated environments, and understanding how containerisation can be used to deploy and manage services efficiently.
+Security controls implemented included AAA authentication using a RADIUS server with local fallback accounts, SSH for secure device management, and 802.1X port-based authentication to restrict network access to authorised devices. Additional protections included disabling unused ports, applying port security, and configuring access control lists (ACLs) to restrict network traffic.
+
+Secure routing between networks was achieved using OSPF combined with a GRE tunnel and VPN-style encryption to protect data travelling across the internet. The network was tested using connectivity and security validation checks to confirm that authentication, routing, and security controls were functioning correctly.
+
+## Cloud Security & Containerised Home Lab
+
+Built a secure cloud-based home lab environment using Docker Compose to deploy and manage multiple containerised services. The environment included a reverse proxy, identity management system, password manager, and security testing environment.
+
+A reverse proxy was implemented using Nginx Proxy Manager with automated SSL certificates from Let’s Encrypt to provide encrypted HTTPS access to internal services. Authentication was centralised using Authentik to provide single sign-on (SSO) with multi-factor authentication (MFA) for protected applications.
+
+Additional services included Vaultwarden for secure password management, Portainer for container administration, and a custom homepage dashboard to monitor running services. A containerised Kali Linux environment was also deployed to provide a browser-accessible penetration testing platform within the isolated lab infrastructure.
