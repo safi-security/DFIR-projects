@@ -1,10 +1,18 @@
 # DFIR-projects
 
 ## Digital Forensics Investigation
-Investigated an E01 forensic disk image using X-Ways Forensics. The investigation involved analysing artefacts, examining file system metadata, identifying USB activity, and constructing timelines to understand system behaviour. The goal was to identify potential evidence and reconstruct user activity on the system.
+Conducted a forensic investigation of an E01 disk image using X-Ways Forensics to determine whether unauthorized access had occurred to files stored on a Google Drive account.
 
-## Malware Analysis
-Performed malware analysis and reverse engineering using Ghidra as part of a group project analysing the Emotet malware. The analysis involved examining the program structure, identifying key functions, and understanding the behaviour of the malware to determine how it operates.
+The investigation analysed multiple digital artefacts including browser history, web cache, Windows Registry entries, USB device metadata, Recycle Bin artefacts, and filesystem data such as the Master File Table ($MFT).
+
+Evidence showed that files were accessed, downloaded, and transferred to an external USB device. A professional forensic timeline was constructed by correlating timestamps from multiple artefact sources to reconstruct the sequence of events in a format suitable for investigative or legal reporting.
+
+## Malware Analysis & Reverse Engineering
+Investigated a suspected malware infection using a forensic disk image, memory data, and a live assessment VM. The analysis examined key indicators including processes, network ports, filesystem artefacts, Prefetch data, and PowerShell command history to determine how the system was compromised.
+
+The malware sample was unpacked and analysed using static analysis techniques in Ghidra. Reverse engineering identified network-related API calls such as InternetOpenA, InternetConnectA, and InternetCloseHandle from the WinINet library, confirming the malware’s ability to establish outbound network communication consistent with Trojan-style behaviour.
+
+Evidence from disk artefacts, PowerShell activity, and reverse engineering findings was correlated to reconstruct the infection timeline and demonstrate how the malware was deployed and executed on the system.
 
 ## Network Security
 Configured and secured network devices using Cisco Packet Tracer. This included implementing device and administrator passwords, configuring AAA server authentication, and setting up GRE tunnelling between network devices to simulate secure communication across networks.
