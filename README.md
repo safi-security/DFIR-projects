@@ -2,8 +2,6 @@
 
 This repository contains a selection of cybersecurity projects completed as part of my university studies. The work focuses on digital forensics, malware analysis, cloud security, and network security, demonstrating practical investigation and secure system configuration.
 
-Focused on hands-on DFIR, malware analysis, and secure system design.
-
 ## Malware Analysis & Reverse Engineering
 Performed malware analysis on a suspected infection using forensic disk images, memory data, and a live investigation environment. The malware sample was unpacked and reverse engineered using Ghidra, identifying WinINet API calls such as InternetOpenA, InternetConnectA, and InternetCloseHandle used to establish outbound network communication.
 
