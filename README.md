@@ -32,6 +32,6 @@ Authentication was protected using **Authentik Single Sign-On (SSO) with Multi-F
 
 ## Network Security Configuration
 
-Designed and secured a simulated enterprise network using **Cisco Packet Tracer**. Security controls included **AAA authentication using RADIUS, SSH for secure device management, 802.1X port authentication, access control lists (ACLs), and secure routing using OSPF with GRE tunnels**.
+Designed and secured a simulated enterprise network using **Cisco Packet Tracer**. Security controls included **AAA authentication using RADIUS, SSH for secure device management, 802.1X port authentication, access control lists, and secure routing using OSPF with GRE tunnels**.
 
 **Technologies:** Cisco networking, AAA, 802.1X, ACLs, OSPF, GRE
